@@ -2,11 +2,11 @@
 
 ABSOLUTE_DOCKER=`pwd`
 WS_PATH="${ABSOLUTE_DOCKER%%/src/*}"
-CONTAINER_NAME=ironcon
+CONTAINER_NAME=gpscon
 
 mkdir ~/.ccache || echo ccache folder already exists
 
-NAME=iron_img # replace by the name of your image
+NAME=iron_gps # replace by the name of your image
 
 echo Stopping previous $CONTAINER_NAME
 docker stop $CONTAINER_NAME || echo Container was not running
